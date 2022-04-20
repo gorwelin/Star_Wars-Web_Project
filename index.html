@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html lang="en">
+    <head>
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Looking to protect and serve? The Final Order offers a wide range of careers
+        across the galaxies, far far away and even on your home planet. You can also use this website to report any
+        jedi activity, for a reward.">
+        <meta name="author" content="wnw19njx">
+        <meta name="keywords" content="The Final Order, Kylo Ren, stormtrooper, army recruitment, report jedi">
+        <!-- All images have been minified and optimised for web -->
+
+        <title>The Final Order</title>
+        
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.co.uk/chrome/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="header-container">
+                <a class="logo" href="index.html">
+                    <i class="fab fa-first-order"></i>
+                    <span>FINAL ORDER</span>
+                </a>
+                <nav id="header-nav">   
+                    <a href="whoweare.html">WHO WE ARE</a> 
+                    <a href="news.html">NEWS</a>   
+                    <a href="reportajedi.html">REPORT A JEDI</a>
+                    <a onclick="openEnroll()">JOIN US</a>
+                </nav>
+                <span class="mobile-nav-bttn"><i class="fas fa-bars"></i></span>
+            </div>
+        </header>
+        <main>
+            
+            <section class="intro-screen">
+                <div class="intro-text">
+                    <div class="intro-text-wrapper">
+                        <i class="fab fa-first-order"></i>
+                        <h1>JOIN THE NEW GALACTIC EMPIRE</h1>
+                        <p>Become a stormtrooper today and get your free energized particle blaster!</p>
+                    
+                        <a class="home-link" onclick="openEnroll()">LEARN MORE</a>
+                    </div>
+
+                </div>
+                <div class="stormtrooper-img"></div>
+                
+            </section>
+            <section class="prot-emp">
+                <div class="prot-emp-img"></div>
+                <div>
+                    <h2 class="home-header">PROTECT THE GALAXY</h2>
+                    <p>
+                        The stormtrooper army serves the galactic empire's interests, 
+                        protecting all planets within the galaxy. Providing a safe, secure place 
+                        for us all to prosper.  Our highly trained soldiers are prepared to 
+                        deploy anywhere across the 70 million worlds we support. 
+                    </p>
+                    <a class="home-link" href="whoweare.html">WHO WE ARE</a>
+                </div>
+            </section>
+            <section class="seen-jedi">
+                <div class="seen-jedi-wrapper">
+                    <h3>HAVE YOU SEEN ANY JEDI ACTIVITY?</h3>
+                    <p>
+                        There is a bounty for all known active Jedi, Let us know and you will be rewarded.
+                        Help our Inquisitors track the enemy down.
+                    </p>
+                    <a class="home-link" href="reportajedi.html">REPORT A JEDI</a>
+                </div>
+            </section>
+            <div class="serve-comm">
+                <div class="serve-comm-wrapper">
+                    <h4>SERVE YOUR COMMUNITY</h4>
+                    <a class="home-link" onclick="openEnroll()">REALISE YOUR POTENTIAL</a>
+                </div>
+            </div>
+
+            <section class="latest-news">
+                <div class="latest-news-wrapper">
+                    <h5>LATEST NEWS</h5>
+                    <a class="home-link" href="news.html">
+                        <span>SEE MORE</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="latest-news-highlights"></div>
+            </section>
+
+        </main>
+        <footer>
+            <nav>   
+                <a href="whoweare.html">WHO WE ARE</a> 
+                <a href="news.html">NEWS</a>   
+                <a href="reportajedi.html">REPORT A JEDI</a>
+                <a onclick="openEnroll()">JOIN US</a>
+            </nav>
+            <div class="footer-wrapper">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/groups/458696617635759">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a id="easter-egg-bttn">
+                        <i class="fab fa-jedi-order"></i>
+                    </a>
+                    <a id="sc-bttn">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                    <a href="https://twitter.com/FirstOrderBase">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=FaOSCASqLsE">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    
+                </div>
+                <aside>
+                    <p> JOIN THE STORMTROOPER ARMY TODAY</p>
+                    <div class="footer-contact">
+                        <a href="mailto:contactus@firstorder.galaxy">
+                            <i class="far fa-envelope"></i>
+                            <span>contactus@firstorder.galaxy</span>
+                        </a>
+                        <a href="tel:042-088-1077">
+                            <i class="fas fa-phone"></i>
+                            <span>(042) 088-1077</span>
+                        </a>
+                        <a id="address-bttn">
+                            <i class="fas fa-home"></i>
+                            <span>
+                                Sith Citadel,
+                                Exegol,
+                                9.8524,1.7412
+                            </span>
+                        </a>
+                    </div>
+                </aside>
+                <div></div>
+            </div>
+                
+            
+
+            <script>
+                document.write("<small>&copy; Owen West " + new Date().getFullYear() + ". All Rights Reserved</small>");
+            </script>
+        </footer>
+
+        <div class="news-article-wrapper"></div>
+        <div class="tooltip" id="easter-egg">
+            <div class="popup-header">
+                <h6>That's funny...</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            
+            <p>
+                It looks like you tried to access The Jedi Order website. You wouldn't do that..right? <br>
+                Just to be sure, close this tab <br><br>
+                If you really want to visit their site: <span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a></span>
+            </p>
+        </div>
+        <div class="tooltip" id="sc-no">
+            <div class="popup-header">
+                <h6>Sorry!</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            
+            <p>
+                We don't currently have a snapchat, we are a galatic empire! not a teenager..
+            </p>
+        </div>
+
+        <div class="tooltip" id="address-no">
+            <div class="popup-header">
+                <h6>Sorry!</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            <p>
+                Google Earth and Google Maps only cover the milky way. Sucks, right? How am I supposed
+                to get directions to the nearest cantina? We've sent a complaint but haven't heard back yet..
+            </p>
+        </div>
+        <div class="tooltip" id="form-success">
+            <div class="popup-header">
+                <h6>Success!</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            <p>
+                Your information has successfully been submitted, thank you
+            </p>
+        </div>
+        <div class="join-form-wrapper">
+            <form id="join-form">
+                <div class="popup-header">
+                    <h3>JOIN THE STORMTROOPER ARMY</h3>
+                    <a class="form-close-bttn"><i class="fas fa-times"></i></a>
+                </div>
+                
+                <p>LOTS OF THINGS CAN GIVE YOU CONFIDENCE, FOR A LITTLE WHILE.
+                BUT CONFIDENCE THAT LASTS A LIFETIME? THERE’S ONE PLACE YOU’LL FIND THAT.</p>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="text" id="name" name="fullname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="text" id="email" name="email" placeholder="Your Email Address.." required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="gi-no">Galactic Insurance No.</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="text" id="gi-no" name="gi-no" placeholder="Your Galactic Insurance Number (GINo)" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="join-cv">Your CV</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="file" id="join-cv" name="join-cv" accept="application/msword, application/pdf">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input id="submit" type="submit" value="SUBMIT">
+                </div>
+ 
+                
+            </form>
+        </div>
+
+        <!-- 
+            Solution to common bug with Chrome involving css transitions
+            https://crbug.com/332189
+            https://crbug.com/167089
+        -->
+        <script> </script>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

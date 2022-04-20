@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="wnw19njx">
+        <meta name="keywords" content="The Final Order, Kylo Ren, stormtrooper, army recruitment, report jedi">
+
+        <title>Latest News - The Final Order</title>
+        
+
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <a class="logo" href="index.html">
+                    <i class="fab fa-first-order"></i>
+                    <span>FINAL ORDER</span>
+                </a>
+                <nav id="header-nav">   
+                    <a href="whoweare.html">WHO WE ARE</a> 
+                    <a class="nav-active" href="news.html">NEWS</a>   
+                    <a href="reportajedi.html">REPORT A JEDI</a>
+                    <a onclick="openEnroll()">JOIN US</a>
+                </nav>
+                <span class="mobile-nav-bttn"><i class="fas fa-bars"></i></span>
+            </div>
+        </header>
+        <main>
+            <div class="news-wrapper">
+                <h1>LATEST NEWS</h1>
+                <div class="carousel-holder"></div>
+                <div class="carousel-nav">
+                    <div class="pips"></div>
+                    <div>
+                        <a onclick="nextArticle(-1)"><i class="fas fa-caret-left"></i></a>
+                        <a onclick="nextArticle(1)"><i class="fas fa-caret-right"></i></a>
+                    </div>  
+                </div>
+                <h2>ALL NEWS STORIES</h2>
+                <div class="articles-wrapper"> </div>
+
+            </div>
+            
+            
+        </main>
+        <footer>
+            <nav>   
+                <a href="whoweare.html">WHO WE ARE</a> 
+                <a href="news.html">NEWS</a>   
+                <a href="reportajedi.html">REPORT A JEDI</a>
+                <a onclick="openEnroll()">JOIN US</a>
+            </nav>
+            <div class="footer-wrapper">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/groups/458696617635759">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a id="easter-egg-bttn">
+                        <i class="fab fa-jedi-order"></i>
+                    </a>
+                    <a id="sc-bttn">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                    <a href="https://twitter.com/FirstOrderBase">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=FaOSCASqLsE">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    
+                </div>
+                <aside>
+                    <p> JOIN THE STORMTROOPER ARMY TODAY</p>
+                    <div class="footer-contact">
+                        <a href="mailto:contactus@firstorder.galaxy">
+                            <i class="far fa-envelope"></i>
+                            <span>contactus@firstorder.galaxy</span>
+                        </a>
+                        <a href="tel:042-088-1077">
+                            <i class="fas fa-phone"></i>
+                            <span>(042) 088-1077</span>
+                        </a>
+                        <a id="address-bttn">
+                            <i class="fas fa-home"></i>
+                            <span>
+                                Sith Citadel,
+                                Exegol,
+                                9.8524,1.7412
+                            </span>
+                        </a>
+                    </div>
+                </aside>
+                <div></div>
+            </div>
+                
+            
+
+            <script>
+                document.write("<small>&copy; Owen West " + new Date().getFullYear() + ". All Rights Reserved</small>");
+            </script>
+        </footer>
+
+        <div class="news-article-wrapper"></div>
+        <div class="tooltip" id="easter-egg">
+            <div class="popup-header">
+                <h6>That's funny...</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            
+            <p>
+                It looks like you tried to access The Jedi Order website. You wouldn't do that..right? <br>
+                Just to be sure, close this tab <br><br>
+                If you really want to visit their site: <span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a></span>
+            </p>
+        </div>
+        <div class="tooltip" id="sc-no">
+            <div class="popup-header">
+                <h6>Sorry!</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            
+            <p>
+                We don't currently have a snapchat, we are a galatic empire! not a teenager..
+            </p>
+        </div>
+
+        <div class="tooltip" id="address-no">
+            <div class="popup-header">
+                <h6>Sorry!</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            <p>
+                Google Earth and Google Maps only cover the milky way. Sucks, right? How am I supposed
+                to get directions to the nearest cantina? We've sent a complaint but haven't heard back yet..
+            </p>
+        </div>
+        <div class="tooltip" id="form-success">
+            <div class="popup-header">
+                <h6>Success!</h6>
+                <a class="tooltip-close-bttn"><i class="fas fa-times"></i></a>
+            </div>
+            <p>
+                Your information has successfully been submitted, thank you
+            </p>
+        </div>
+        <div class="join-form-wrapper">
+            <form id="join-form">
+                <div class="popup-header">
+                    <h3>JOIN THE STORMTROOPER ARMY</h3>
+                    <a class="form-close-bttn"><i class="fas fa-times"></i></a>
+                </div>
+                
+                <p>LOTS OF THINGS CAN GIVE YOU CONFIDENCE, FOR A LITTLE WHILE.
+                BUT CONFIDENCE THAT LASTS A LIFETIME? THERE’S ONE PLACE YOU’LL FIND THAT.</p>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="text" id="name" name="fullname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="text" id="email" name="email" placeholder="Your Email Address.." required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="gi-no">Galactic Insurance No.</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="text" id="gi-no" name="gi-no" placeholder="Your Galactic Insurance Number (GINo)" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col-labels">
+                        <label for="join-cv">Your CV</label>
+                    </div>
+                    <div class="form-col-input">
+                        <input type="file" id="join-cv" name="join-cv" accept="application/msword, application/pdf">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input id="submit" type="submit" value="SUBMIT">
+                </div>
+ 
+                
+            </form>
+        </div>
+
+        <!-- 
+            Solution to common bug with Chrome involving css transitions
+            https://crbug.com/332189
+            https://crbug.com/167089
+        -->
+        <script> </script>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
